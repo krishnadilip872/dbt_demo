@@ -1,0 +1,12 @@
+jaffle_shop:
+  outputs:
+    dev:
+      dbname: dlt_test1
+      host: 68.183.193.113
+      pass: mypassword
+      port: 5433
+      schema: dbt_demo
+      threads: 1
+      type: postgres
+      user: myuser
+  target: dev
