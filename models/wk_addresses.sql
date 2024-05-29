@@ -9,7 +9,7 @@ WITH wk_addresses AS (
         ADDRESS1 AS "Address Line #1",
         ADDRESS2 AS "Address Line #2",
         CITY AS "Municipality",
-        "STATE" AS "Region",
+        'STATE' AS "Region",
         POSTAL AS "Postal Code"
     FROM
         ORACLE_TEST.PS_ADDRESSES
@@ -22,7 +22,7 @@ wk_addresses1 AS (
         ADDRESS1 AS "Address Line #1",
         ADDRESS2 AS "Address Line #2",
         CITY AS "Municipality",
-        "STATE" AS "Region",
+        'STATE' AS "Region",
         POSTAL AS "Postal Code"
      FROM
         ORACLE_TEST.PS_ADDRESSES
