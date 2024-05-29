@@ -27,7 +27,9 @@ wk_addresses1 AS (
      FROM
         ORACLE_TEST.PS_ADDRESSES
      WHERE address_type IN ('MAIL', 'OTH', 'PERM', 'LEGL')
- )
+ ),
+wk2 as(
 SELECT * FROM wk_addresses
 UNION ALL
-SELECT * FROM wk_addresses1;
+SELECT * FROM wk_addresses1)
+select * from wk2
