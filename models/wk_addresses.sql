@@ -12,7 +12,7 @@ WITH wk_addresses AS (
         'STATE' AS "Region",
         POSTAL AS "Postal Code"
     FROM
-        ORACLE_TEST.PS_ADDRESSES
+        PS_BRONZE_ZONE.PS_ADDRESSES
     WHERE address_type IN ('HOME')
 ),
 wk_addresses1 AS (
@@ -25,7 +25,7 @@ wk_addresses1 AS (
         'STATE' AS "Region",
         POSTAL AS "Postal Code"
      FROM
-        ORACLE_TEST.PS_ADDRESSES
+        PS_BRONZE_ZONE.PS_ADDRESSES
      WHERE address_type IN ('MAIL', 'OTH', 'PERM', 'LEGL')
  ),
 wk2 as(

@@ -5,7 +5,7 @@ jaffle_shop:
       host: 68.183.193.113
       pass: mypassword
       port: 5433
-      schema: dbt_demo
+      schema: ps_silver_zone
       threads: 1
       type: postgres
       user: myuser
